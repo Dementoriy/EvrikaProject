@@ -1,0 +1,9 @@
+﻿@model User
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<form asp-controller="home" asp-action="index" class="text-center">
+    <input placeholder="Имя пользователя" asp-for="Name"/>
+    <button type="submit" class="btnUserCheck">Проверить</button>
+</form>
